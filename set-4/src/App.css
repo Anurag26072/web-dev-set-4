@@ -1,0 +1,114 @@
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.task-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.task-title { font-size: 1.4rem; color: #a855f7; margin-bottom: 8px; }
+
+.task-description { color: #aaa; margin-bottom: 20px; font-size: 0.95rem; }
+
+.task-description code {
+  background: rgba(168, 85, 247, 0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #a855f7;
+}
+
+/* ── Like Button ── */
+.like-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.like-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  border-radius: 50px;
+  background: rgba(168, 85, 247, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.like-button:hover {
+  background: rgba(168, 85, 247, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2);
+}
+
+.like-button:active {
+  transform: scale(0.95);
+}
+
+.heart-emoji {
+  font-size: 2.5rem;
+  transition: transform 0.3s;
+}
+
+.like-button:hover .heart-emoji {
+  transform: scale(1.2);
+}
+
+.like-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.like-status {
+  margin-top: 16px;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.user-card {
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 12px;
+  padding: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.15);
+}
+
+.user-name { font-size: 1.05rem; margin-bottom: 6px; }
+.user-website { font-size: 0.95rem; color: #aaa; }
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #a855f7;
+  padding: 40px;
+}
